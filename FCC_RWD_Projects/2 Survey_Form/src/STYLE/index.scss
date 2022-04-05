@@ -1,0 +1,26 @@
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/regular.scss";
+@import "./fontawesome/scss/brands.scss";
+
+// @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+
+:root {
+    --clr-txt: #5a5a5a;
+    --clr-primary: #067e0a;
+    --clr-accent: #764981;
+
+    --ff-title: "Fredoka", sans-serif;
+    --ff-main: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-main);
+    color: var(--clr-txt);
+}
