@@ -4,3 +4,13 @@ img {
   height: auto;
   margin: 0 auto;
 }
+
+body {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
