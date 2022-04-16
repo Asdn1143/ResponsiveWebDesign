@@ -1,14 +1,15 @@
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/regular.scss";
-@import "./fontawesome/scss/brands.scss";
-
-// @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/fontawesome.scss";
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/regular.scss";
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/_icons.scss";
 
 :root {
-    --clr-txt: #5a5a5a;
+    --clr-bc: #fff;
+    --clr-main: #eee;
+    --clr-txt: #263645;
     --clr-primary: #067e0a;
     --clr-accent: #764981;
+
+    --pic-width: 645px;
 
     --ff-title: "Fredoka", sans-serif;
     --ff-main: "Roboto", sans-serif;
@@ -17,10 +18,123 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
+
 html {
     box-sizing: border-box;
     font-family: var(--ff-main);
     color: var(--clr-txt);
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    // margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#main {
+    margin: 30px 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+}
+#header {
+    height: 100px;
+    padding: 0;
+    margin: 20px 0px 10px 0px;
+}
+#info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+}
+#info-timeline {
+    // padding-bottom: 10px;
+}
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    #header {
+        margin: 0px;
+        padding: 20px 0px 100px 0px;
+    }
+    #title {
+        font-size: 3.5rem;
+    }
+    #info-header {
+        display: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+figure {
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+
+figcaption {
+    margin: 15px 0 5px 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+ul {
+    max-width: 550px;
+
+    margin: 0 auto 10px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+    margin: 16px 0;
+    list-style: none;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+h3 {
+    margin: 50px;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
 }

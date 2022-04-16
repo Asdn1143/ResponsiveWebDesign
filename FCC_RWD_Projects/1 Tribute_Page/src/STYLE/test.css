@@ -1,0 +1,106 @@
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/fontawesome.scss";
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/regular.scss";
+@import "../../../ASSETS/fontawesome-free-6.1.1-web/scss/_icons.scss";
+
+:root {
+  --clr-bc: #fff;
+  --clr-main: #eee;
+  --clr-txt: #263645;
+  --clr-primary: #067e0a;
+  --clr-accent: #764981;
+
+  --ff-title: "Fredoka", sans-serif;
+  --ff-main: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+  color: var(--clr-txt);
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  height: 300vh;
+  width: 100%;
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+.main-container {
+  background-color: var(--clr-main);
+  height: 99%;
+  width: 98%;
+  border-radius: 5px;
+  margin: auto;
+  position: relative;
+  margin-top: 1.6rem;
+}
+
+header {
+  height: 6%;
+  width: 100%;
+  border-radius: 5px;
+  margin: solid 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 2em;
+    font-family: var(--ff-title);
+    color: var(--clr-txt);
+  }
+  p {
+    font-size: 3rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+}
+
+figure {
+  background-color: var(--clr-bc);
+  height: 60rem;
+  width: 96%;
+  margin: auto;
+
+  img {
+    height: 90%;
+    width: 100%;
+    border-radius: 5px;
+    margin: solid 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+figcaption {
+  margin: auto;
+}
