@@ -16046,11 +16046,18 @@ h2 {
   height: 70px;
 }
 
+#info-timeline {
+  padding-bottom: 1px;
+}
+
 ul {
   max-width: 550px;
   margin: 0 auto 10px auto;
   text-align: left;
   line-height: 1.6;
+}
+ul:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 @media (max-width: 460px) {
@@ -16074,7 +16081,7 @@ ul {
   }
 
   ul {
-    margin: 0px 10px;
+    margin: 0px 10px 0px;
   }
 }
 img {
@@ -16105,12 +16112,12 @@ blockquote {
   font-style: italic;
   max-width: 545px;
   padding: 0 20px;
-  margin: 0 auto 50px auto;
+  margin: 10px auto 10px auto;
   text-align: left;
 }
 
 h3 {
-  margin: 50px;
+  margin: 10px;
   padding: 20px;
 }
 

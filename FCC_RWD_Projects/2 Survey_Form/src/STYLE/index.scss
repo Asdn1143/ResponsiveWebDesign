@@ -1,17 +1,12 @@
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/regular.scss";
-@import "./fontawesome/scss/brands.scss";
-
-// @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@200&display=swap");
 
 :root {
-    --clr-txt: #5a5a5a;
-    --clr-primary: #067e0a;
-    --clr-accent: #764981;
+    --clr-bc: hsl(0, 0%, 90%);
+    --clr-primary: hsl(0, 0%, 0%);
+    --clr-secondary: hsl(0, 0%, 100%);
 
     --ff-title: "Fredoka", sans-serif;
-    --ff-main: "Roboto", sans-serif;
+    --ff-main: "Monserrat", sans-serif;
 }
 
 *,
@@ -23,4 +18,24 @@ html {
     box-sizing: border-box;
     font-family: var(--ff-main);
     color: var(--clr-txt);
+    font-size: 62.5%;
+    font-weight: 100;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-bc);
+}
+
+*:is(*, ::before, ::after) {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }

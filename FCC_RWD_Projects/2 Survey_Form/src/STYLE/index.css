@@ -1,5 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@200&display=swap");
+:root {
+  --clr-bc: hsl(0, 0%, 90%);
+  --clr-primary: hsl(0, 0%, 0%);
+  --clr-secondary: hsl(0, 0%, 100%);
+  --ff-title: "Fredoka", sans-serif;
+  --ff-main: "Monserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
-  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+  color: var(--clr-txt);
+  font-size: 62.5%;
+  font-weight: 100;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-bc);
+}
+
+*:is(*, ::before, ::after) {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: min(100%, 800px);
+  margin: auto;
+}
+
+header {
+  font-family: var(--ff-title);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 0;
+  height: 150px;
+}
+header h1 {
+  padding: 40px 0 20px 0;
+  font-weight: 100;
+}
+header .container--progress {
+  width: 30rem;
+  height: 70px;
+  border: 1px solid #000;
+  margin: 0px auto;
 }
 
 /*# sourceMappingURL=index.css.map */

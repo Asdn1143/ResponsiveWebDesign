@@ -14,58 +14,30 @@
     <!-- JS -->
     <script type="module" defer src="SCRIPTS/index.js"></script>
 
-    <title>Tribute Page</title>
+    <title>Survey Form</title>
   </head>
   <body>
-    <main id="main">
-      <header>
-        <h1 id="title">Dr. Norman Borlaug</h1>
-        <h2></h2>
-      </header>
-      <article>
-        <div id="img-div">
-          <img
-      id="image"
-      src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
-      alt="Dr. Norman Borlaug seen standing in Mexican wheat field with a group of biologists"
-    />
-    <figcaption id="img-caption">
-      Dr. Norman Borlaug, third from the left, trains biologists in Mexico on
-      how to increase wheat yields - part of his life-long war on hunger.
-    </figcaption>
-  </figure>
-        <section id="tribute-info">
-          Content
-          <div id="tribute-header"></div>
-          <ol class="">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-          <div class="tribute-quote"></div>
-          <a
-        id="tribute-link"
-        href="https://en.wikipedia.org/wiki/Norman_Borlaug"
-        target="_blank"
-        >More Content</a
-      >
-        </section>
-      </article>
-      <footer></footer>
-    </main>
-
+    <div class="background">
+      <div class="form-container">
+        <h1>Survey form</h1>
+        <form action="">
+          <div class="form-section" data-form-section="1">
+            <!-- name,age, email,residency -->
+          </div>
+          <div class="form-section" data-form-section="2">
+            <!-- Would you reccomend the product to a friend ? (radio 1-5) -->
+            <!-- Favourite feature of the product (multi choice) -->
+          </div>
+          <div class="form-section" data-form-section="3">
+            <!-- Suggestions (text area) -->
+          </div>
+          <div class="button-container">
+            <input type="submit" data-btn="submit" class="submit btn" />
+            <button class="btn prev" data-btn="prev"></button>
+            <button class="btn next" data-btn="next"></button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
