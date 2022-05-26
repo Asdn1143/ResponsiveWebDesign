@@ -4,6 +4,8 @@
     --clr-bc: hsl(0, 0%, 90%);
     --clr-primary: hsl(0, 0%, 0%);
     --clr-secondary: hsl(0, 0%, 100%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-txt: hsl(0, 0%, 100%);
 
     --ff-title: "Fredoka", sans-serif;
     --ff-main: "Monserrat", sans-serif;
@@ -20,12 +22,17 @@ html {
     color: var(--clr-txt);
     font-size: 62.5%;
     font-weight: 100;
-
-    height: 100vh;
-    width: 100vw;
+}
+*:is(*, ::before, ::after) {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
+
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.5;
@@ -34,8 +41,35 @@ body {
     background-color: var(--clr-bc);
 }
 
-*:is(*, ::before, ::after) {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+.background {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d 50%, #fcb045);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    height: 100%;
+    width: min(500px, 100%);
+    // background-color: var(--clr-secondary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-family: var(--ff-title);
+        font-size: 7rem;
+        font-weight: 100;
+        color: var(--clr-txt);
+        margin: 0;
+        padding: 30px 0px;
+    }
+}
+
+.btn {
+    cursor: pointer;
 }
