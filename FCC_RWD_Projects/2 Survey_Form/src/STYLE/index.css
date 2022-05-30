@@ -5,6 +5,7 @@
   --clr-secondary: hsl(0, 0%, 100%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-txt: hsl(0, 0%, 100%);
+  --clr-section: hsl(0, 0%, 100%, 50%);
   --ff-title: "Fredoka", sans-serif;
   --ff-main: "Monserrat", sans-serif;
 }
@@ -63,6 +64,42 @@ body {
   color: var(--clr-txt);
   margin: 0;
   padding: 30px 0px;
+}
+
+.section-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: var(--clr-section);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.button-container {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
