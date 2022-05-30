@@ -86,9 +86,22 @@ body {
 .button-container {
   height: 150px;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 50px;
+  height: 8rem;
+  margin: 20px;
+  border: none;
+}
+
+.submit {
+  font-size: 30px;
 }
 
 form {
@@ -100,10 +113,6 @@ form {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-.btn {
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

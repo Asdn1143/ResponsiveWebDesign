@@ -94,9 +94,24 @@ body {
     height: 150px;
     width: 100%;
 
-    display: flex;
+    //make grid with one column and 3 spaces
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    //center items
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 50px;
+    height: 8rem;
+    margin: 20px;
+    border: none;
+}
+
+.submit {
+    font-size: 30px;
 }
 
 form {
@@ -109,8 +124,4 @@ form {
     padding: 0;
     margin: 0;
     // background-color: #fff;
-}
-
-.btn {
-    cursor: pointer;
 }
