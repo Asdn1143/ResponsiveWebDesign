@@ -72,8 +72,11 @@ body {
 }
 
 .section-container {
-    height: 100%;
+    height: 60%;
     width: 100%;
+
+    margin: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +97,9 @@ body {
     height: 150px;
     width: 100%;
 
+    padding: 10px;
+    margin-top: auto;
+
     //make grid with one column and 3 spaces
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -108,10 +114,15 @@ body {
     height: 8rem;
     margin: 20px;
     border: none;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.small {
+    width: 8rem;
 }
 
 .submit {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 form {
