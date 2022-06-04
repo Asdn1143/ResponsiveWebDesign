@@ -59,7 +59,6 @@ body {
 .form-container {
     height: 100%;
     width: min(500px, 100%);
-    // background-color: var(--clr-secondary);
 
     display: flex;
     flex-direction: column;
@@ -164,7 +163,6 @@ body {
     width: 100%;
     margin: auto;
 
-    //place it in the second column of grid
     grid-column: 2 / span 1;
 }
 
