@@ -18,25 +18,48 @@
       <div class="form-container">
         <h1>Survey form</h1>
         <form action="">
-        <div class="section-container">
-
-            <div class="form-section" data-form-section="1">
-              <!-- name,age, email,residency -->
-            </div>
-            <div class="form-section" data-form-section="2">
-              <!-- Would you reccomend the product to a friend ? (radio 1-5) -->
-              <!-- Favourite feature of the product (multi choice) -->
-            </div>
-            <div class="form-section" data-form-section="3">
-              <!-- Suggestions (text area) -->
-              
-            </div>
-          </div>
+         <div class="section-container " data-form-section="1">
+           <div class="input-container">
+            <label id="name-label" for="name">Name</label><br>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+             
+           </div>
+           <div class="input-container">
+            <label id="age-label" for="age">Age</label><br>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age"
+              required
+            />
+             
+           </div>
+           <div class="input-container">
+            <label id="email-label" for="email">Email</label><br>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+             
+           </div>
+            
+         </div>
+          
           
           <div class="button-container">
-            <button class="btn small prev" data-btn="prev"></button>
+
             <input type="submit" data-btn="submit" class="btn submit" />
-            <button class="btn small next" data-btn="next"></button>
+
           </div>
         </form>
     </div>
