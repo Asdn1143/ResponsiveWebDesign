@@ -1,0 +1,35 @@
+:root {
+    --clr-bc: #fff;
+    --clr-main: #eee;
+    --clr-txt: #263645;
+    --clr-primary: #067e0a;
+    --clr-accent: #764981;
+
+    --pic-width: 645px;
+
+    --ff-title: "Fredoka", sans-serif;
+    --ff-main: "Roboto", sans-serif;
+}
+
+*:is(*, ::before, ::after) {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-main);
+    color: var(--clr-txt);
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
