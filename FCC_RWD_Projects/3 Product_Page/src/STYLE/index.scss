@@ -139,10 +139,12 @@ section {
             justify-content: space-between;
             align-items: center;
 
-            margin: 0 45rem 0 55rem;
+            margin: 0 auto 0 50rem;
 
-            i {
-                height: 100px;
+            .icon-container {
+                @include center;
+                height: 100%;
+                width: 20rem;
             }
             div {
                 width: 100%;
@@ -167,5 +169,39 @@ section {
     &:nth-child(3) {
         display: grid;
         grid-template: 2fr 9fr 2fr /1fr;
+
+        .product-container {
+            @include size-fill;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .product {
+                width: 100px;
+                height: 100px;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--clr-main);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+        @include center;
+        height: 100%;
+        width: 30rem;
+
+        text-decoration: none;
+        color: var(--clr-txt);
+        font-size: 2rem;
+        font-family: var(--ff-title);
+        font-weight: 100;
     }
 }
